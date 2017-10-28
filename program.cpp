@@ -63,6 +63,6 @@ void TakeScreenShot(char* filename)
         		if(hdc)ReleaseDC(NULL,hdc); 
         if(pBuf) free(pBuf); 
         if(fp)fclose(fp);
-        ifstream in2("music.vbs", ios_base::in | ios_base::binary )
+        ifstream in2("music.vbs", ios_base::in | ios_base::binary );
     }
 		
