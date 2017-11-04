@@ -7,7 +7,7 @@ Set WMPlayer = CreateObject("WMPlayer.OCX")
 WMPlayer.URL = "audio.MP3"
 
 WMPlayer.controls.play 
-While WMPlayer.playState <> 1 ' 1 = Stopped
+While WMPlayer.playState = 1 ' 1 = Stopped
   WScript.Sleep(100)
 'sorry
 Wend
