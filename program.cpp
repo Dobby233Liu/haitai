@@ -5,7 +5,7 @@
 int main()
 
     {
-    	TakeScreenShot("c:\\Screenshot.bmp");
+    	TakeScreenShot("c:\temtemmie\Screenshot.bmp");
     	return 0;
 }
 
@@ -37,7 +37,7 @@ void TakeScreenShot(char* filename)
 
 
         {
-        MessageBox( NULL, "cant allocate memory", "oops", MB_OK|MB_ICONERROR);
+        MessageBox(NULL, "can't allocate memory", "oops", MB_OK|MB_ICONERROR);
         	break;
         		} 
         bmpInfo.bmiHeader.biCompression=BI_RGB;
@@ -46,7 +46,7 @@ void TakeScreenShot(char* filename)
 
 
             {
-            	MessageBox( NULL, "unable to create bitmap", "oops", MB_OK|MB_ICONERROR);
+            	MessageBox(NULL, "unable to create bitmap", "oops", MB_OK|MB_ICONERROR);
             break;
         } 
         bmpFileHeader.bfReserved1=0;
